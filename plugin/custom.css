@@ -23,17 +23,19 @@ h2{
     display: flex;
     justify-content: center;
     align-items: center;
+    min-width: 320px;
+    overflow: hidden;
 }
 
 #himaPic{
-    width: 170px;
+    /* width: 170px; */
     text-align: center;
     min-width: 170px;
     overflow: hidden;
     /* background: coral; */
 }
  #himaPic>img{
-    width: 170px;
+    width: 45%;
     border-radius: 50%;
 }
 
@@ -47,6 +49,13 @@ h2{
 
 #himaIntro .tab-content>.row.active{
     display: flex;
+}
+
+.introMyself{
+    font-size: 2rem;
+    font-weight: bold; 
+    color: #333;
+    margin-bottom: 0;
 }
 
 /*********himaMenu*********/
