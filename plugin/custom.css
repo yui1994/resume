@@ -1,0 +1,217 @@
+:root{
+    scroll-behavior: auto;
+}
+
+body{
+    font-family: 'Roboto','Noto Sans TC',arial, sans-serif;
+    background: #f5f1ed;
+    margin: 0;
+}
+
+h2{
+    text-align: start;
+    font-weight: 600;
+    color: #555;
+}
+
+
+/* 主畫面 */
+#himaHi{
+    background: #e1d6cd;
+    height: 100vh;
+    /* background: #e1d6cd; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#himaPic{
+    width: 170px;
+    text-align: center;
+    min-width: 170px;
+    overflow: hidden;
+    /* background: coral; */
+}
+ #himaPic>img{
+    width: 170px;
+    border-radius: 50%;
+}
+
+#himaContact{
+    text-align:center;
+}
+
+#himaIntro{
+    flex:0 1 15%;
+}
+
+#himaIntro .tab-content>.row.active{
+    display: flex;
+}
+
+/*********himaMenu*********/
+.navbar-brand{
+    font-weight: bold;
+}
+
+
+/******himaeAnde**********/
+
+.timeline li{
+    display: block;
+    list-style: none;
+    background: white;
+    padding: 10px 10px 2px;
+    margin: 15px;
+    border-radius: 10px;
+    
+}
+
+.timeline li:hover{
+    color: white;
+    background: #BDAC9F;
+}
+
+/* .timeline li::after{
+    
+} */
+
+.timeline{
+    position: relative;
+}
+
+.timeline::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 3%;
+    width: 2px;
+    height: 100%;
+    background-color:#888;
+}
+/******himaSkill***********/
+.iconBox{
+    height: 275px;
+}
+.skills .iconBox {
+    padding: 20px 15px;
+    position: relative;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0 0 15px 0 #888;
+    transition: all 0.3s ease-in-out;
+    border-radius: 8px;
+    text-align: center;
+    z-index: 1;
+}
+
+.skills .iconBox::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 0;
+    transition: ease-in-out 0.3s;
+    z-index: -1;
+}
+
+.skills .iconBox:hover::before {
+    background: #E4D6CF;
+    height: 100%;
+    border-radius: 0px;
+}
+
+.skills ul {
+    margin: 0;
+    padding: 0;
+}
+
+.skills h5{
+    color: #9B8377;
+    font-weight: 600;
+}
+
+.skills li {
+    color: white;
+    display: block;
+    list-style: none;
+    background: #9B8377;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 10px;
+}
+
+.skills .icon {
+    margin: 0 auto 15px auto;
+    padding-top: 10px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    background: #E4D6CF;
+}
+
+.icon>i {
+    font-size: 36px;
+    line-height: 1;
+    color: #9B8377;
+}
+
+
+/******himaPortfolio******/
+.porBox{
+    padding: 10px;
+    background: #E4DBCF;
+    border: 1px solid #776A51;
+    border-radius: 0px 5px 5px;
+}
+
+#himaPorfolio .nav-link{
+    margin-right: 1px;
+    flex:0 1 15%;
+    border-color: #776A51;
+    color: #82660d;
+    font-weight: 600;
+    /* box-shadow: 1px -1px 3px 0px #b0b0b0a8; */
+}
+
+#himaPorfolio .nav-link.active{
+    background: #E4DBCF;
+    color: #776A51;
+    border: 1px 0px 1px solid #776A51;
+}
+
+
+#himaPorfolio .nav-tabs,
+#himaPorfolio .nav-link{
+    border-bottom: none;
+}
+
+
+
+#himaPorfolio .tab-content>.row.active{
+    display: flex;
+}
+
+
+
+
+.card img{
+    object-fit: cover;
+    max-height: 150px;
+    /* max-width: 320px; */
+    object-position: top;
+}
+
+
+/*****footer******************************/
+footer{
+    background: #e1d6cd;
+}
+
+footer>span{
+    font-style: #f5f1ed;
+}
+

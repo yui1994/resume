@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hi,Nice to meet you</title>
+    <!-- favicon.icon -->
+    <link rel="shortcut icon" href="media/carrot.ico" type="image/x-icon">
+    <!-- font awsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css"
+        integrity="sha512-vZWT27aGmde93huNyIV/K7YsydxaafHLynlJa/4aPy28/R1a/IxewUH4MWo7As5I33hpQ7JS24kwqy/ciIFgvg=="
+        crossorigin="anonymous" />
+    <!-- bs  -->
+    <link rel="stylesheet" href="./plugin/bootstrap.min.css">
+    <script src="./plugin/bootstrap.bundle.js"></script>
+    <!-- JQ -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous"></script>
+    <!-- custom css -->
+    <link rel="stylesheet" href="./plugin/custom.css">
+</head>
+
+<body>
+    <!-- navbar部分 -->
+    <header id="himaMenu" class="fixed-top" style="background:#e1d6cd;">
+        <nav class="navbar navbar-expand-md navbar-light">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <i class="fas fa-id-card-alt"></i> Hima
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#himaNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="himaNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link " href="#himaIntro"><i class="fas fa-fw fa-user-circle"></i>About me</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#himaeAnde"><i class="fas fa-fw fa-briefcase"></i>學經歷</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#himaSkill"><i class="fas fa-fw fa-wrench"></i>技能</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#himaPorfolio"><i class="far fa-fw fa-file-alt"></i>作品</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="./login.html" title="登入"><i
+                                    class="fas fa-sign-in-alt"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- 主畫面 -->
+    <div id="himaHi" class="">
+        <div id="himaPic">
+            <img src="./media/noharahimawari.jpg" alt="大頭照">
+            <span style="font-size: 2rem;">Hi, I'm hima</span>
+            <a href="https://www.facebook.com/profile.php?id=100000314292387" target="_blank"><img
+                    src="./media/fb_s.ico" alt="facebook" style="width: 20px;"></a>
+            <a href="https://github.com/yui1994" target="_blank"><img src="./media/github_s.ico" alt="github"
+                    style="width: 20px;"></a>
+            <a href="mailto:1994yaya@gmail.com"><img src="./media/email_s.ico" alt="email" style="width: 20px;"></a>
+
+        </div>
+    </div>
+
+    <!-- about me -->
+    <section id="himaIntro" class="container py-3">
+        <header class="text-center">
+            <h2 class="mb-4 py-3">About Me</h2>
+        </header>
+
+        <!-- 內容區 -->
+        <article class="tab-content py-3">
+            <div class="row tab-pane fade show active">
+                <div class="col-12">
+                    <div id="me">
+                        自我介紹
+                    </div>
+                    <div id="job">
+                        志望動機
+                    </div>
+                </div>
+            </div>
+        </article>
+    </section>
+
+    <!-- 學經歷 -->
+    <section id="himaeAnde" class="container py-3">
+        <header class="text-center">
+            <h2 class="mb-4 py-3">學經歷</h2>
+        </header>
+        <div class="row etEx">
+            <div class="col-lg-6 etd">
+                <h3>學歷</h3>
+                <ul class="timeline">
+                    <li>
+                        <h5>泰山訓練場-網頁後端PHP課程</h5>
+                        <p>2021/3~2021/9</p>
+                    </li>
+
+                    <li>
+                        <h5>輔仁大學-日本語文學系</h5>
+                        <p>2013/9~2017/6</p>
+                    </li>
+
+                    <li>
+                        <h5>新北市立中和高中</h5>
+                        <p>2010/9~2013/6</p>
+                    </li>
+
+                </ul>
+            </div>
+            <div class="col-lg-6 exp">
+                <h3>經歷</h3>
+                <ul class="timeline">
+                    <li class="liTitle" type="button" data-bs-toggle="collapse" data-bs-target="#work01">
+                        <h5>日本打工度假</h5>
+                        <p>2019/3~2020/2</p>
+                    </li>
+                    <li class="collapse" id="work01"
+                        style="margin-top: -32px; border-radius: 0px 0px 10px 10px;">
+                        <p>-為了到處體驗不同環境，共做過三份不同的工作</p>
+                        <p>-東京:線上菜單日翻中在地化翻譯人員</p>
+                        <p>-岐阜:日式觀光旅館的餐廳服務人員</p>
+                        <p>-山形:日式觀光旅館的房務人員</p>
+                    </li>
+
+                    <li class="liTitle" type="button" data-bs-toggle="collapse" data-bs-target="#work02">
+                        <h5>環資國際-網站客服人員</h5>
+                        <p>2018/10~2019/2</p>
+                    </li>
+                    <li class="collapse" id="work02"
+                        style="margin-top: -32px; border-radius: 0px 0px 10px 10px;">
+                        <p>-派駐環保署，協助使用者操作網站系統、排解問題</p>
+                        <p>-負責協助約1900個提報單位操作系統在期限內完成提報</p>
+                    </li>
+                    <li class="liTitle" type="button" data-bs-toggle="collapse" data-bs-target="#work03">
+                        <h5>全國美容雜誌社-業務助理</h5>
+                        <p>2017/9~2018/5</p>
+                    </li>
+                    <li class="collapse" id="work03"
+                        style="margin-top: -32px; border-radius: 0px 0px 10px 10px;">
+                        <p>-完成主管交辦事項、追蹤廠商進度、協助製作公司簡報及上架相關資訊或文章至公司官網</p>
+                        <p>-在美容展期間至展場佈展及接待來客，除了台灣的展覽外，並有與主管一同到日本參展之經驗</p>
+                        <p>-協助廠商辦理申請及核銷政府補助</p>
+                        <p>-與配合的旅行社對接，討論廠商參展行程之相關事宜</p>
+                    </li>
+                    <!-- <li>
+                        <h5>日本打工度假</h5>
+                        <p>2019/3~2020/2</p>
+                        <p>-為了到處體驗不同環境，共做過三份不同的工作</p>
+                        <p>-東京:線上菜單日翻中在地化翻譯人員</p>
+                        <p>-岐阜:日式觀光旅館的餐廳服務人員</p>
+                        <p>-山形:日式觀光旅館的房務人員</p>
+                    </li>
+                    <li>
+                        <h5>環資國際-網站客服人員</h5>
+                        <p>2018/10~2019/2</p>
+                        <p>-派駐環保署，協助使用者操作網站系統、排解問題</p>
+                        <p>-負責協助約1900個提報單位操作系統在期限內完成提報</p>
+                    </li>
+                    <li>
+                        <h5>全國美容雜誌社-業務助理</h5>
+                        <p>2017/9~2018/5</p>
+                        <p>-完成主管交辦事項、追蹤廠商進度、協助製作公司簡報及上架相關資訊或文章至公司官網</p>
+                        <p>-在美容展期間至展場佈展及接待來客，除了台灣的展覽外，並有與主管一同到日本參展之經驗</p>
+                        <p>-協助廠商辦理申請及核銷政府補助</p>
+                        <p>-與配合的旅行社對接，討論廠商參展行程之相關事宜</p>
+                    </li> -->
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- 技能 -->
+    <section id="himaSkill" class="container py-3">
+        <header class="text-center">
+            <h2 class="mb-4 py-3">技能</h2>
+        </header>
+        <div class="row ">
+            <div class="col-12 mb-3 col-md-6 col-lg-3">
+                <div class="skills">
+                    <div class="iconBox">
+                        <div class="icon">
+                            <i class="fas fa-laptop-code fa-2x"></i>
+                        </div>
+                        <h5>前端</h5>
+                        <ul>
+                            <li>HTML5</li>
+                            <li>CSS</li>
+                            <li>Javascript</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 mb-3 col-md-6 col-lg-3">
+                <div class="skills">
+                    <div class="iconBox">
+                        <div class="icon">
+                            <i class="fas fa-compass fa-2x"></i>
+                        </div>
+                        <h5>後端</h5>
+                        <ul>
+                            <li>PHP</li>
+                            <li>MySQL</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 mb-3 col-md-6 col-lg-3">
+                <div class="skills ">
+                    <div class="iconBox">
+                        <div class="icon">
+                            <i class="fas fa-palette fa-2x"></i>
+                        </div>
+                        <h5>視覺影像</h5>
+                        <ul>
+                            <li>PhotoShop</li>
+                            <li>Illustrator</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 mb-3 col-md-6 col-lg-3">
+                <div class="skills">
+                    <div class="iconBox">
+                        <div class="icon">
+                            <i class="fas fa-comment-dots fa-2x"></i>
+                        </div>
+                        <h5>語言</h5>
+                        <ul>
+                            <li>中文</li>
+                            <li>日文</li>
+                            <li>英文</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 作品集 -->
+    <section id="himaPorfolio" class="container py-3">
+        <header class="text-center">
+            <h2 class="mb-4 py-3">作品集</h2>
+            <nav class="nav nav-tabs flex-nowrap">
+                <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#webDesign">網頁設計</button>
+                <button class="nav-link" data-bs-toggle="tab" data-bs-target="#picDesign">平面設計</button>
+            </nav>
+        </header>
+
+        <!-- 內容區 -->
+        <article class="tab-content py-5 porBox">
+            <div class="row tab-pane fade show active" id="webDesign">
+                <!-- <p class="col-12 text-muted text-center">網頁設計</p> -->
+                <!-- col滿版:要嘛不寫(預設就是滿版)要嘛寫col-12 如果只寫col 再加其他 md lg設定的話會怪怪的XDD -->
+                <div class="col-12 mb-3 col-md-6 col-lg-3">
+                    <div class="card shadow-sm">
+                        <img src="./media/webD01.png" class="card-img-top">
+                        <div class="card-body">
+                            <h5>萬年曆</h5>
+                            <p class="card-text">
+                                <small class="text-muted float-end">PHP</small>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 mb-3 col-md-6 col-lg-3">
+                    <div class="card shadow-sm">
+                        <img src="./media/webD02.png" class="card-img-top">
+                        <div class="card-body">
+                            <h5>打地鼠小遊戲</h5>
+                            <p class="card-text">
+                                <small class="text-muted float-end">JavaScript</small>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 mb-3 col-md-6 col-lg-3">
+                    <div class="card shadow-sm">
+                        <img src="./media/webD03.png" class="card-img-top">
+                        <div class="card-body">
+                            <h5>一頁式網頁</h5>
+                            <p class="card-text">
+                                <small class="text-muted float-end">Bootstrap</small>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 mb-3 col-md-6 col-lg-3">
+                    <div class="card shadow-sm">
+                        <img src="./media/webD04.png" class="card-img-top">
+                        <div class="card-body">
+                            <h5>闖關小遊戲</h5>
+                            <p class="card-text">
+                                <small class="text-muted float-end">SweetAlert</small>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row tab-pane fade" id="picDesign">
+                <!-- <p class="col-12 text-muted text-center">平面設計</p> -->
+                <div class="col-12 mb-3 col-md-6 col-lg-3">
+                    <div class="card shadow-sm">
+                        <img src="./media/picD01.jpg" class="card-img-top">
+                        <div class="card-body">
+                            <h5>EDM</h5>
+                            <p class="card-text">
+                                <small class="text-muted float-end">PhotoShop</small>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 mb-3 col-md-6 col-lg-3">
+                    <div class="card shadow-sm">
+                        <img src="./media/picD02.jpg" class="card-img-top">
+                        <div class="card-body">
+                            <h5>燒酒宣傳海報</h5>
+                            <p class="card-text">
+                                <small class="text-muted float-end">PhotoShop</small>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 mb-3 col-md-6 col-lg-3">
+                    <div class="card shadow-sm">
+                        <img src="./media/picD03.jpg" class="card-img-top">
+                        <div class="card-body">
+                            <h5>2021年曆</h5>
+                            <p class="card-text">
+                                <small class="text-muted float-end">PhotoShop</small>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </section>
+
+    <!-- footer -->
+    <footer class="text-muted text-center py-3">
+        <a href="https://www.facebook.com/profile.php?id=100000314292387" target="_blank"><img src="./media/fb_s.ico"
+                alt="facebook" style="width: 20px;"></a>
+        <a href="https://github.com/yui1994" target="_blank"><img src="./media/github_s.ico" alt="github"
+                style="width: 20px;"></a>
+        <a href="mailto:1994yaya@gmail.com"><img src="./media/email_s.ico" alt="email" style="width: 20px;"></a>
+        <br>
+        <small>
+            copyright &copy; <span style="color: #713e17">Hima2021</span>. all rights reserved
+        </small>
+        <!-- 回頁首的跳跳按鈕 -->
+        <!-- <div id="himaArrow" class="position-fixed">
+            <a href="#" class="btn btn-warning"><i class="fas fa-undo-alt"></i></a>
+        </div> -->
+    </footer>
+
+    <!-- JQ -->
+    <script>
+        $("#himaMenu a").click(function () {
+            const
+                who = $(this).attr('href'),
+                val = $(who).offset().top - $("#himaMenu").innerHeight(); //各#的所在的位置高度扣除掉被menu列擋掉的地方(偏移往上退一點)
+            // console.log(val);
+            // $("html").scrollTop(val); //用scrollTop找到各#對應的html高度位置
+            $("html").animate({ scrollTop :val },500); //用JQ有的animate控制scrollTop要滑到的定點位置
+        });
+    </script>
+</body>
+
+</html>

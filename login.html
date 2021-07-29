@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+.align {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 320px;
+  overflow: hidden;
+  background: #f5f1ed;
+  height: 100vh;
+}
+
+.loginContent{
+    width: 300px;
+    margin: 25px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 2px #dfdfdf;
+}
+
+a {
+  color: #999;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #634352;
+}
+
+
+input {
+    /* font: inherit; */
+  border: none;
+  margin: 0;
+  outline: none;
+  padding: 0;
+}
+
+
+.loginHeader {
+  background:#E4DBCF;
+  border-radius: 5px 5px 0px 0px;
+  color: #776A51;
+  padding: 24px;
+  text-align: center;
+}
+
+.loginTitle {
+  margin: 0;
+}
+
+.loginBody {
+  background-color: #fff;
+  padding: 24px;
+  position: relative;
+}
+
+.loginBody::before {
+  content: '';
+  background-color: #fff;
+  height: 10px;
+  width: 10px;
+  left: 50%;
+  top: 0;
+  margin-left: -4px;
+  margin-top: -4px;
+  position: absolute;
+  transform: rotate(45deg);
+}
+
+.login input[type='text'],
+.login input[type='password'] {
+  border: 1px solid #e5e5e5;
+  padding: 10px 10px ;
+  margin-top: 5px;
+  border-radius: 2px;
+  width: 90%;
+}
+
+.loginFooter {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 0px 0px 5px 5px;
+  justify-content: space-between;
+  padding: 0px 24px 24px 24px;
+}
+
+.login input[type='submit'] {
+  background: #776A51;
+  color: #FFFBF6;
+  font-weight: 700;
+  order: 1;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.login input[type='submit']:hover {
+  background: #E4DBCF;
+  color: #776A51;
+}
+
+.loginFooter p {
+  margin: 0;
+}
+
+    </style>
+</head>
+<body class="align">
+  <div class="loginContent">
+    <form action="./index.html" method="get" class="form login">
+      <header class="loginHeader">
+        <h3 class="loginTitle">LOGIN</h3>
+      </header>
+      <div class="loginBody">
+        <div>
+          <input type="text" placeholder="account" required>
+        </div>
+        <div>
+          <input type="password" placeholder="password" required>
+        </div>
+      </div>
+      <footer class="loginFooter">
+        <input type="submit" value="Login">
+        <p><a href="./index.html">回首頁</a></p>
+      </footer>
+    </form>
+  </div>
+
+</body>
+</html>
