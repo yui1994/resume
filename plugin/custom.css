@@ -61,8 +61,14 @@ h2{
 /*********himaMenu*********/
 .navbar-brand{
     font-weight: bold;
+    font-weight: 500;
 }
 
+/*********himaIntro*******/
+#me{
+    color: #333;
+    font-size: 1rem;
+}
 
 /******himaeAnde**********/
 
